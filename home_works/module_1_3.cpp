@@ -1,12 +1,11 @@
 /* 
  *  Модуль 1.3. 
  *  Домашнє завдання
- *  Проєкт: Поліцейська мигалка
+ *  Поліцейська мигалка
  */
 
 #include <Arduino.h>
 
-// ===== Constants declaration =====
 #define LED_RED 4
 #define LED_WHITE 5
 #define LED_BLUE 6
@@ -17,7 +16,6 @@
 
 #define REPEAT_TIMES 3
 
-// ===== Functions declaration =====
 void init_logs();
 
 void red_on();
@@ -30,7 +28,6 @@ void all_leds_off();
 void blue_red_pattern(int time, int repeat);
 void all_lights_flash(int repeat);
 
-// ===== Pins initialization and logs setup =====
 void setup() {
   init_logs();
 
@@ -39,7 +36,6 @@ void setup() {
   pinMode(LED_BLUE, OUTPUT);
 }
 
-// ===== Main loop =====
 void loop() {
   blue_red_pattern(DELAY_TIME_1, 3);
   
@@ -50,7 +46,6 @@ void loop() {
   delay(DELAY_TIME_2);
 }
 
-// ===== Functions definition =====
 void init_logs() {
   Serial.begin(115200);
   delay(1000);

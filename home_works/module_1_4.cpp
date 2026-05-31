@@ -1,12 +1,11 @@
 /* 
  *  Модуль 1.4. 
  *  Домашнє завдання
- *  Проєкт: Два світлодіоди, зовнішня кнопка та BOOT
+ *  Два світлодіоди, зовнішня кнопка та BOOT
  */
 
 #include <Arduino.h>
 
-// ===== Constants declaration =====
 #define GREEN_LED 4
 #define BLUE_LED 5
 
@@ -16,17 +15,14 @@
 #define DELAY_TIME_BASE 50
 #define MAX_MODS_QTY 2
 
-// ===== Global variables declaration =====
 int current_mode = 1;
 int prev_mode = 0;
 
-// ===== Functions declaration =====
 void init_logs();
 void mode_logging();
 void leds_blink(int delay_time);
 char* get_mode_name(int current_mode);
 
-// ===== Pins initialization and logs setup =====
 void setup() {
   pinMode(GREEN_LED, OUTPUT);
   pinMode(BLUE_LED, OUTPUT);
@@ -37,7 +33,6 @@ void setup() {
   init_logs();
 }
 
-// ===== Main loop =====
 void loop() {
   int ext_button_state = digitalRead(EXT_BUTTON);
   int int_button_state = digitalRead(INT_BUTTON);
@@ -56,7 +51,6 @@ void loop() {
   delay(50);
 }
 
-// ===== Functions definition =====
 void init_logs() {
   Serial.begin(115200);
   delay(1000);
