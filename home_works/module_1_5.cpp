@@ -14,7 +14,7 @@ int last_button_state = HIGH;
 int button_press_count = 0;
 
 unsigned long last_debounce_time = 0;
-unsigned long debounce_delay = 50;
+unsigned long debounce_delay = 10;
 
 void init_logs();
 

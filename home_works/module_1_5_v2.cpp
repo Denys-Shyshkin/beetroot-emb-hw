@@ -8,7 +8,7 @@ int measured_button_state = HIGH;
 int button_press_count = 0;
 
 unsigned long last_debounce_time = 0;
-unsigned long debounce_delay = 20;
+unsigned long debounce_delay = 10;
 
 void setup() {
   Serial.begin(115200);
