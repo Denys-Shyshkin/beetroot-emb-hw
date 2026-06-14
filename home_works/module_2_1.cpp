@@ -1,3 +1,8 @@
+/**
+ *  Модуль 2.1.  
+ *  Домашнє завдання
+ *  Embedded C++ на ESP32
+ */
 #include <Arduino.h>
 
 constexpr uint8_t GREEN_LED_PIN = 4;
