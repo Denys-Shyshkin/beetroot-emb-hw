@@ -1,3 +1,8 @@
+/**
+ *  Модуль 2.2.  
+ *  Домашнє завдання
+ *  Завдання 2 (опційне): Програмний PWM
+ */
 #include <Arduino.h>
 
 constexpr uint8_t POTENTIOMETER = 4;
