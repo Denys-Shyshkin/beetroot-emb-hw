@@ -1,3 +1,8 @@
+/**
+ *  Модуль 2.3.  
+ *  Домашнє завдання
+ *  Superloop та незалежні задачі
+ */
 #include <Arduino.h>
 
 constexpr uint8_t GREEN_LED = 4;
