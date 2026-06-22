@@ -1,3 +1,8 @@
+/**
+ *  Модуль 2.3.  
+ *  Домашнє завдання
+ *  Superloop та незалежні задачі (завдання №2)
+ */
 #include <Arduino.h>
 
 constexpr uint8_t LED_1 = 4;
