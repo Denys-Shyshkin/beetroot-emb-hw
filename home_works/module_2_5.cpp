@@ -1,3 +1,8 @@
+/**
+ *  Модуль 2.5.  
+ *  Домашнє завдання
+ *  Таймери
+ */
 #include <Arduino.h>
 #include <esp_task_wdt.h>
 
