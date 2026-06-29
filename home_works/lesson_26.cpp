@@ -1,3 +1,8 @@
+/**
+ *  Урок №26.  
+ *  Домашнє завдання
+ *  Міні-проєкт: Світлофор
+ */
 #include <Arduino.h>
 
 constexpr uint8_t BUTTON_PIN = 7;
